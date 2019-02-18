@@ -23,19 +23,6 @@ void ef_min(
         void *min,
         void *index);
 
-/*arm_max_q31(
-    (q31_t *)buf,
-    nbuf,
-    (q31_t *)&max,
-    (uint32_t *)&index);
-
-arm_min_q31(
-    (q31_t *)buf,
-    nbuf,
-    (q31_t *)&min,
-    (uint32_t *)&index);
-*/
-
 #ifdef __cplusplus
 }
 #endif
