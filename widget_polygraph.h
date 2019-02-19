@@ -16,7 +16,7 @@
 
 #include <stdint.h>
 #include "widget.h"
-#include "visual.h"
+//#include "visual.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -139,27 +139,6 @@ void Draw_Dialog(uint16_t X, uint16_t Y,
         uint16_t Width, uint16_t Height, uint16_t Color,
         DrawParameterList_t* params);
 
-void func_save(DrawObject_t *ObjectOnScene);
-void func_back(DrawObject_t *ObjectOnScene);
-void func_config(DrawObject_t *ObjectOnScene);
-void func_touchset(DrawObject_t *ObjectOnScene);
-void func_graphic(DrawObject_t *ObjectOnScene);
-
-//void func_save_container(DrawObject_t *ObjectOnScene);
-void func_save_year(DrawObject_t *ObjectOnScene);
-void func_save_month(DrawObject_t *ObjectOnScene);
-void func_save_day(DrawObject_t *ObjectOnScene);
-void func_save_date(DrawObject_t *ObjectOnScene);
-void func_save_hour0_up(DrawObject_t *ObjectOnScene);
-void func_save_hour1_up(DrawObject_t *ObjectOnScene);
-void func_save_hour0_down(DrawObject_t *ObjectOnScene);
-void func_save_hour1_down(DrawObject_t *ObjectOnScene);
-void func_save_minute0_up(DrawObject_t *ObjectOnScene);
-void func_save_minute1_up(DrawObject_t *ObjectOnScene);
-void func_save_minute0_down(DrawObject_t *ObjectOnScene);
-void func_save_minute1_down(DrawObject_t *ObjectOnScene);
-void func_save_state(DrawObject_t *ObjectOnScene);
-void func_stop_graph(DrawObject_t *ObjectOnScene); 
 
 void ParamsChange_AutoTable(DrawObject_t *ObjectOnScene);
 void ParamsChange_AutoTable_slave(DrawObject_t *ObjectOnScene);

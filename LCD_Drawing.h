@@ -26,19 +26,18 @@
 #define     Y_AXIS                  1
 #define     X_AXIS                  2
 
-#define     CHAR_BUF_SIZE           2000       
+#define     CHAR_BUF_SIZE           2000      
 
+#define PI      3.141592
 
 #define UNUSED(X) (void)X      /* To avoid gcc/g++ warnings */
 
-#if defined ( __GNUC__ ) && !defined (__CC_ARM) /* GNU Compiler */
-  #ifndef __weak
-    #define __weak   __attribute__((weak))
-  #endif /* __weak */
-  #ifndef __packed
-    #define __packed __attribute__((__packed__))
-  #endif /* __packed */
-#endif /* __GNUC__ */
+#define COLOR_BORDER    BLACK
+#define COLOR_PASSIVE   LIGHTBLUE   //NAVY
+#define COLOR_ACTIVE    BLUE
+#define COLOR_BCKGND    WHITE
+#define COLOR_TXT       WHITE
+#define COLOR_EMPTY     WHITE
 
 
 void LCD_Init(void);
