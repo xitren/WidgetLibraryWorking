@@ -1,8 +1,8 @@
 
 #include <stdint.h>
 
-#ifndef WF52QTL_STM32_DRIVER_H
-#define WF52QTL_STM32_DRIVER_H
+#ifndef LCD_STM32_DRIVER_H
+#define LCD_STM32_DRIVER_H
 
 #define FRAME_RAM  0x20062000  
 
@@ -43,14 +43,14 @@
 #define SCREEN_VERTICAL_2		2
 #define SCREEN_HORIZONTAL_2		3
 
-void WF52QTL_Init(void);
-void WF52QTL_Fill_Screen(uint32_t Colour);
-void WF52QTL_Draw_Rectangle(uint16_t X, uint16_t Y, uint16_t Width, uint16_t Height, uint32_t Colour);
-void WF52QTL_Draw_Horizontal_Line(uint16_t X, uint16_t Y, uint16_t Width, uint32_t Colour);
-void WF52QTL_Draw_Vertical_Line(uint16_t X, uint16_t Y, uint16_t Height, uint32_t Colour);
-
-void WF52QTL_Draw_Pixel(uint16_t X,uint16_t Y,uint16_t Colour);
-void WF52QTL_Draw_Picture(uint8_t *buf, uint16_t X0, uint16_t X1, uint16_t Y0, uint16_t Y1);
+//void WF52QTL_Init(void);
+//void WF52QTL_Fill_Screen(uint32_t Colour);
+//void WF52QTL_Draw_Rectangle(uint16_t X, uint16_t Y, uint16_t Width, uint16_t Height, uint32_t Colour);
+//void WF52QTL_Draw_Horizontal_Line(uint16_t X, uint16_t Y, uint16_t Width, uint32_t Colour);
+//void WF52QTL_Draw_Vertical_Line(uint16_t X, uint16_t Y, uint16_t Height, uint32_t Colour);
+//
+//void WF52QTL_Draw_Pixel(uint16_t X,uint16_t Y,uint16_t Colour);
+//void WF52QTL_Draw_Picture(uint8_t *buf, uint16_t X0, uint16_t X1, uint16_t Y0, uint16_t Y1);
 
 
 //void Bresenham(uint16_t Color, uint16_t x0, uint16_t y0, uint16_t x, uint16_t y);   // ??
