@@ -26,7 +26,6 @@ extern "C" {
 #define MARKING_UNUSED_PARAMETER(X) (void)(X)
 #endif
    
-
 typedef void (*WidgetFunction_t)(uint16_t X, uint16_t Y, 
                                 uint16_t Width, uint16_t Height, 
                                 uint16_t Color,
