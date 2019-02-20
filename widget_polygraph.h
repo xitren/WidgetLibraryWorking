@@ -15,6 +15,7 @@
 #define WIDGET_POLY_H
 
 #include <stdint.h>
+#include <stdio.h>
 #include "widget.h"
 //#include "visual.h"
 
