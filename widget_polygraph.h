@@ -165,15 +165,7 @@ void PointerOut_Label(DrawObject_t *ObjectOnScene);
 
 extern const WidgetNameRelativeTableRecord draw_table[DRAW_TABLE_SIZE];
 
-#define NTAB    5
-extern uint32_t *page_widgets[NTAB];
-extern char *page_name[NTAB];
-extern char* year_widgets[DRAW_OBJECTS_SIZE];
-extern char* month_widgets[DRAW_OBJECTS_SIZE];
-extern char* day_widgets[DRAW_OBJECTS_SIZE];
-extern char* hour_widgets[DRAW_OBJECTS_SIZE];
-extern char* min_widgets[DRAW_OBJECTS_SIZE];
-
+#define NTAB    20
 
 #ifdef __cplusplus
 }
