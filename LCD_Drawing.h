@@ -45,7 +45,7 @@ void LCD_Init(void);
 void LCD_Fill_Screen(uint32_t Colour);
 
 void LCD_Draw_Horizontal_Line(uint16_t X, uint16_t Y, uint16_t Width, uint32_t Colour);
-void LCD_Draw_Vertical_Line(uint16_t X, uint16_t Y, uint16_t Width, uint32_t Colour);
+void LCD_Draw_Vertical_Line(uint16_t X, uint16_t Y, uint16_t Height, uint32_t Colour);
 void LCD_Draw_Line(uint16_t color, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
 void LCD_Draw_Rect(uint32_t color, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
 void LCD_Draw_Filled_Rect(uint32_t Colour, uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1);
