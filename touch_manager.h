@@ -21,8 +21,8 @@
 extern "C" {
 #endif
 
-#define MAX_TOUCHES_LENGHT 6
-
+#define MAX_TOUCHES_LENGHT  6
+#define LIFTOFF_DELAY       64
 typedef enum 
 {
   POINTER_STATUS_ON        = 0x00U,
