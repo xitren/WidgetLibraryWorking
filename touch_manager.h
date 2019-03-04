@@ -21,6 +21,7 @@
 extern "C" {
 #endif
 
+#define MIN_DIFFERENTIATION 10
 #define MAX_TOUCHES_LENGHT  6
 #define LIFTOFF_DELAY       64
 typedef enum 
