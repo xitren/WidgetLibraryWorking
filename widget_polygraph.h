@@ -169,7 +169,7 @@ void PointerOn_Label(DrawObject_t *ObjectOnScene);
 void PointerOut_Label(DrawObject_t *ObjectOnScene);
 
 
-#define DRAW_TABLE_SIZE 20
+#define DRAW_TABLE_SIZE 22
 
 extern const WidgetNameRelativeTableRecord draw_table[DRAW_TABLE_SIZE];
 
