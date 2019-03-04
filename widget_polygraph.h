@@ -170,6 +170,7 @@ void PointerOn_Label(DrawObject_t *ObjectOnScene);
 void PointerOut_Label(DrawObject_t *ObjectOnScene);
 
 void PointerMove_RollButton(DrawObject_t *ObjectOnScene);
+void PointerMove_RollButtonH(DrawObject_t *ObjectOnScene);
 
 #define DRAW_TABLE_SIZE 22
 
