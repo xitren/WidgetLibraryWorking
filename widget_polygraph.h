@@ -82,6 +82,14 @@ void Draw_ButtonLeft(uint16_t X, uint16_t Y,
                 uint16_t Width, uint16_t Height,  uint16_t Color,
                 DrawParameterList_t* params);
 
+void Draw_ButtonUpTre(uint16_t X, uint16_t Y,
+        uint16_t Width, uint16_t Height, uint16_t Color,
+        DrawParameterList_t* params);
+
+void Draw_ButtonDownTre(uint16_t X, uint16_t Y,
+        uint16_t Width, uint16_t Height, uint16_t Color,
+        DrawParameterList_t* params);
+
 void Draw_Time(uint16_t X, uint16_t Y, 
                 uint16_t Width, uint16_t Height, uint16_t Color,
                 DrawParameterList_t* params);
