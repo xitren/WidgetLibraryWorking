@@ -86,11 +86,12 @@ int Add_Object(char* ID, char* Type,
         uint16_t X, uint16_t Y, 
         uint16_t Width, uint16_t Height, 
         uint16_t Colour, 
-        CallbackEventFunction_t func,
+        CallbackEventFunction_t func_params_change,
         CallbackEventFunction_t func_ptrover,
         CallbackEventFunction_t func_ptrout,
         CallbackEventFunction_t func_ptrenter,
         CallbackEventFunction_t func_ptrleave,
+        CallbackEventFunction_t func_ptrmove,
         CallbackEventFunction_t func_click
     );
 
