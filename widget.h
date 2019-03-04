@@ -74,6 +74,7 @@ typedef struct _tagDrawObject_t
    OBJECT_STRUCTURE
    uint8_t                          Draw;
    uint8_t                          DynamicDraw;
+   uint8_t                          DrawDirection;
    uint16_t                         Consistancy;
 } DrawObject_t;
 
