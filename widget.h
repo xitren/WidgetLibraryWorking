@@ -98,6 +98,10 @@ int Add_Object(char* ID, char* Type,
 
 void Clear_Objects(void);
 
+void SetFirstVisibleIndex(void);
+void SetLastVisibleIndex(void);
+void ResetVisibleIndex(void);
+
 uint32_t Get_Object_Size(void);
 
 int Resize_Object(char* ID, uint16_t X_, uint16_t Y_, uint16_t Width_, uint16_t Height_);
