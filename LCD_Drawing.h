@@ -38,7 +38,13 @@
 #define COLOR_DISABLED  LIGHTGREY
 #define COLOR_BCKGND    WHITE
 #define COLOR_TXT       WHITE
-#define COLOR_EMPTY     WHITE
+#define COLOR_EMPTY     WHITE	
+
+typedef struct _color_t{
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+}color_t; 
 
 
 void LCD_Init(void);
@@ -88,6 +94,10 @@ void LCD_Draw_Filled_Ellipse(uint16_t X0, uint16_t Y0,
 void LCD_Draw_Ellipse(uint16_t X0, uint16_t Y0,
         uint16_t A, uint16_t B, uint16_t Colour);
 
+//colors
+ color_t  SrgbCompanding(color_t c);
+ color_t  InverseSrgbCompanding(color_t c);
+ uint32_t  ColorMix(uint32_t color1, uint32_t color2, float mix);
 
 // low level
 void LCD_Configure(void);
