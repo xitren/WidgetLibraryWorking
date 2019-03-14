@@ -54,6 +54,7 @@ typedef struct _UserSettings_t {
 UserSettings_t UserSettings; 
 
 uint32_t rgb565_to_rgb888(uint16_t rgb565);
+uint16_t rgb888_to_rgb565(uint32_t rgb888);
 
 WidgetFunction_t findDrawFunction(char* class_name);
 WidgetFunction_t findDynamicDrawFunction(char* class_name);
@@ -106,9 +107,13 @@ void Draw_Battery(uint16_t X, uint16_t Y,
                 uint16_t Width, uint16_t Height,  uint16_t Color, 
                 DrawParameterList_t* params);
 
-void Draw_Graph(uint16_t X, uint16_t Y, 
+void Draw_GraphLinear2D(uint16_t X, uint16_t Y, 
                 uint16_t Width, uint16_t Height,  uint16_t Color,
                 DrawParameterList_t* params);
+
+void Draw_GraphColorMap(uint16_t X, uint16_t Y,
+        uint16_t Width, uint16_t Height, uint16_t Color,
+        DrawParameterList_t* params);
 
 void Draw_AutoTable(uint16_t X, uint16_t Y, 
                 uint16_t Width, uint16_t Height,  uint16_t Color,
@@ -171,7 +176,7 @@ void PointerOut_Label(DrawObject_t *ObjectOnScene);
 void PointerMove_RollButton(DrawObject_t *ObjectOnScene);
 void PointerMove_RollButtonH(DrawObject_t *ObjectOnScene);
 
-#define DRAW_TABLE_SIZE 22
+#define DRAW_TABLE_SIZE 23
 
 extern const WidgetNameRelativeTableRecord draw_table[DRAW_TABLE_SIZE];
 

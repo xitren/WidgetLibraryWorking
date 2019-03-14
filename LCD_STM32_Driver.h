@@ -55,6 +55,5 @@
 
 //void Bresenham(uint16_t Color, uint16_t x0, uint16_t y0, uint16_t x, uint16_t y);   // ??
 
-	
 #endif
 
