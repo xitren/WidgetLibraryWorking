@@ -132,6 +132,7 @@ void checkAndCall_PointerDown(uint16_t X, uint16_t Y);
 void checkAndCall_PointerUp(uint16_t X, uint16_t Y);
 void checkAndCall_PointerOn(uint16_t X, uint16_t Y);
 void checkAndCall_PointerOut(uint16_t X, uint16_t Y);
+void checkAndCall_PointerOff(uint16_t X, uint16_t Y) ;
 void checkAndCall_PointerEnter(uint16_t X1, uint16_t Y1,uint16_t X2, uint16_t Y2);
 void checkAndCall_PointerLeave(uint16_t X1, uint16_t Y1,uint16_t X2, uint16_t Y2);
 void checkAndCall_PointerMove(uint16_t X1, uint16_t Y1,uint16_t X2, uint16_t Y2);
