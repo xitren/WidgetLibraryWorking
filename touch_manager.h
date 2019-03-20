@@ -24,10 +24,7 @@ extern "C" {
 #define MIN_DIFFERENTIATION 4
 #define MAX_TOUCHES_LENGHT  6
 #define LIFTOFF_DELAY       64
-    
-#define TOUCH_ON        0
- #define TOUCH_OFF      1
-#define TOUCH_NONE    2
+
 
 typedef enum 
 {
@@ -56,7 +53,6 @@ void Add_Touch(uint16_t X, uint16_t Y);
 TouchStatusTypeDef Get_TouchStatus();
 void Cycle_Handler();
 
-extern uint8_t touch_state;
 
 #ifdef __cplusplus
 }
