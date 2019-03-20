@@ -26,7 +26,7 @@
 #define     Y_AXIS                  1
 #define     X_AXIS                  2
 
-#define     CHAR_BUF_SIZE           2000      
+#define     PIC_BUF_SIZE           2000      
 
 #define PI      3.141592
 
