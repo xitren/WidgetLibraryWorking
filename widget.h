@@ -52,7 +52,6 @@ extern "C" {
     CallbackEventFunction_t          FunctionLink_Click;\
     DrawParameterList_t              Parameters;
 
-    
 typedef struct _tagDrawParameter_t
 {
    char*                            strParam;
@@ -78,21 +77,6 @@ typedef struct _tagDrawObject_t
    uint8_t                          DrawDirection;
    uint16_t                         Consistancy;
 } DrawObject_t;
-
-
-typedef struct _ObjectCallbackList_t
-{
-    CallbackEventFunction_t          FunctionLink_PointerOver;
-    CallbackEventFunction_t          FunctionLink_PointerEnter;
-    CallbackEventFunction_t          FunctionLink_PointerDown;
-    CallbackEventFunction_t          FunctionLink_PointerMove;
-    CallbackEventFunction_t          FunctionLink_PointerUp;
-    CallbackEventFunction_t          FunctionLink_PointerCancel;
-    CallbackEventFunction_t          FunctionLink_PointerOut;
-    CallbackEventFunction_t          FunctionLink_PointerLeave;
-    CallbackEventFunction_t          FunctionLink_ParamsChange;
-    CallbackEventFunction_t          FunctionLink_Click;
-}ObjectCallbackList_t;
 
 #define DRAW_OBJECTS_SIZE 100
 extern DrawObject_t ObjectsOnScene[DRAW_OBJECTS_SIZE];
@@ -154,8 +138,6 @@ void checkAndCall_PointerLeave(uint16_t X1, uint16_t Y1,uint16_t X2, uint16_t Y2
 void checkAndCall_PointerMove(uint16_t X1, uint16_t Y1,uint16_t X2, uint16_t Y2);
 
 CallbackEventFunction_t checkAndCall_Click(uint16_t ID);
-
-
 
 #ifdef __cplusplus
 }
