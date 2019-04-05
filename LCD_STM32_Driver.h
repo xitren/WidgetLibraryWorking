@@ -18,7 +18,8 @@
 #define DARKCYAN    0x03EF      
 #define MAROON      0x7800      
 #define PURPLE      0x780F      
-#define OLIVE       0x7BE0      
+#define OLIVE       0x7BE0
+#define SILVER      0xad75   // 0xafafaf  
 #define LIGHTGREY   0xC618      
 #define DARKGREY    0x7BEF      
 #define BLUE        0x001F     
