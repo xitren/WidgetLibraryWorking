@@ -163,6 +163,7 @@ void ParamsChange_ToggleButton(DrawObject_t *ObjectOnScene);
 
 void PointerOn_Button(DrawObject_t *ObjectOnScene);
 void PointerOn_SlaveButton(DrawObject_t *ObjectOnScene);
+void PointerOn_PushButton(DrawObject_t *ObjectOnScene);
 
 void PointerOut_Button(DrawObject_t *ObjectOnScene);
 void PointerEnter_Button(DrawObject_t *ObjectOnScene);
