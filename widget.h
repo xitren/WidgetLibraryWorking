@@ -78,6 +78,17 @@ typedef struct _tagDrawObject_t
    uint16_t                         Consistancy;
 } DrawObject_t;
 
+typedef struct _ObjectCallbacks_t
+{
+    CallbackEventFunction_t func_params_change;
+    CallbackEventFunction_t func_ptrover;
+    CallbackEventFunction_t func_ptrout;
+    CallbackEventFunction_t func_ptrenter;
+    CallbackEventFunction_t func_ptrleave;
+    CallbackEventFunction_t func_ptrmove;
+    CallbackEventFunction_t func_click;  
+} ObjectCallbacks_t;
+
 #define DRAW_OBJECTS_SIZE 100
 extern DrawObject_t ObjectsOnScene[DRAW_OBJECTS_SIZE];
 
@@ -87,13 +98,14 @@ int Add_Object(char* ID, char* Type,
         uint16_t X, uint16_t Y, 
         uint16_t Width, uint16_t Height, 
         uint16_t Colour, 
-        CallbackEventFunction_t func_params_change,
-        CallbackEventFunction_t func_ptrover,
-        CallbackEventFunction_t func_ptrout,
-        CallbackEventFunction_t func_ptrenter,
-        CallbackEventFunction_t func_ptrleave,
-        CallbackEventFunction_t func_ptrmove,
-        CallbackEventFunction_t func_click
+        ObjectCallbacks_t callbacks
+//        CallbackEventFunction_t func_params_change,
+//        CallbackEventFunction_t func_ptrover,
+//        CallbackEventFunction_t func_ptrout,
+//        CallbackEventFunction_t func_ptrenter,
+//        CallbackEventFunction_t func_ptrleave,
+//        CallbackEventFunction_t func_ptrmove,
+//        CallbackEventFunction_t func_click
     );
 
 void Clear_Objects(void);
