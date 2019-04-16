@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   widget.h
- * Author: gusev_a
- *
- * Created on 27 июня 2018 г., 15:52
- */
 
 #ifndef WIDGET_H
 #define WIDGET_H
@@ -99,13 +87,6 @@ int Add_Object(char* ID, char* Type,
         uint16_t Width, uint16_t Height, 
         uint16_t Colour, 
         ObjectCallbacks_t callbacks
-//        CallbackEventFunction_t func_params_change,
-//        CallbackEventFunction_t func_ptrover,
-//        CallbackEventFunction_t func_ptrout,
-//        CallbackEventFunction_t func_ptrenter,
-//        CallbackEventFunction_t func_ptrleave,
-//        CallbackEventFunction_t func_ptrmove,
-//        CallbackEventFunction_t func_click
     );
 
 void Clear_Objects(void);

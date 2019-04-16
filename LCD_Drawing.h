@@ -56,9 +56,6 @@ void LCD_Draw_Vertical_Line(uint16_t X, uint16_t Y, uint16_t Height, uint32_t Co
 void LCD_Draw_Line(uint16_t color, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
 void LCD_Draw_Rect(uint32_t color, uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2);
 void LCD_Draw_Filled_Rect(uint32_t Colour, uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1);
-//void LCD_Draw_Rect_Coord(uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1, uint16_t Colour);
-//void LCD_Draw_Filled_Rect_Coord(uint16_t Colour, uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1);
-
 
 //USING CONVERTER: http://www.digole.com/tools/PicturetoC_Hex_converter.php
 //65K colour (2Bytes / Pixel)
@@ -94,10 +91,6 @@ void LCD_Draw_Filled_Ellipse(uint16_t X0, uint16_t Y0,
 void LCD_Draw_Ellipse(uint16_t X0, uint16_t Y0,
         uint16_t A, uint16_t B, uint16_t Colour);
 
-//colors
- color_t  SrgbCompanding(color_t c);
- color_t  InverseSrgbCompanding(color_t c);
- uint32_t  ColorMix(uint32_t color1, uint32_t color2, float mix);
 
 // low level
 void LCD_Configure(void);

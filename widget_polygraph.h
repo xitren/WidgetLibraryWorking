@@ -112,10 +112,6 @@ void Draw_GraphLinear2D(uint16_t X, uint16_t Y,
                 uint16_t Width, uint16_t Height,  uint16_t Color,
                 DrawParameterList_t* params);
 
-void Draw_GraphColorMap(uint16_t X, uint16_t Y,
-        uint16_t Width, uint16_t Height, uint16_t Color,
-        DrawParameterList_t* params);
-
 void Draw_AutoTable(uint16_t X, uint16_t Y, 
                 uint16_t Width, uint16_t Height,  uint16_t Color,
                 DrawParameterList_t* params);
@@ -178,7 +174,7 @@ void PointerOut_Label(DrawObject_t *ObjectOnScene);
 void PointerMove_RollButton(DrawObject_t *ObjectOnScene);
 void PointerMove_RollButtonH(DrawObject_t *ObjectOnScene);
 
-#define DRAW_TABLE_SIZE 23
+#define DRAW_TABLE_SIZE 22
 
 extern const WidgetNameRelativeTableRecord draw_table[DRAW_TABLE_SIZE];
 
