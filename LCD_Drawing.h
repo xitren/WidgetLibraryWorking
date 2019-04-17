@@ -26,9 +26,11 @@
 #define     Y_AXIS                  1
 #define     X_AXIS                  2
 
-#define     PIC_BUF_SIZE           2000      
+#define     PIC_BUF_SIZE           2000
 
-#define PI      3.141592
+#ifndef PI
+  #define PI               3.14159265358979f
+#endif
 
 #define UNUSED(X) (void)X      /* To avoid gcc/g++ warnings */
 
